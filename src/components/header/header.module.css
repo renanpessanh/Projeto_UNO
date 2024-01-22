@@ -1,0 +1,55 @@
+.Header {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #bcbcbc;
+}
+
+.ul_menu {
+  display: flex;
+  gap: 32px;
+}
+.ul_menu li a {
+  color: #bcbcbc;
+}
+
+.header_button {
+  display: flex;
+  gap: 12px;
+}
+.header_button a {
+  color: #bcbcbc;
+}
+
+.entrar_btn {
+  color: #bcbcbc;
+  border: 1px solid #bcbcbc;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.entrar_btn:hover {
+  border: 1px solid #fff;
+}
+
+.registro_btn {
+  border: 1px solid #17161e;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.registro_btn:hover {
+  border: 1px solid #fff;
+}
