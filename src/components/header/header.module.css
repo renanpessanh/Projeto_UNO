@@ -20,8 +20,13 @@
 .ul_menu li a {
   color: #bcbcbc;
 }
+.ul_menu li a:hover {
+  color: #d80f0f;
+  text-decoration: underline;
+}
 
 .header_button {
+  margin-right: 60px;
   display: flex;
   gap: 12px;
 }
@@ -31,7 +36,7 @@
 
 .entrar_btn {
   color: #bcbcbc;
-  border: 1px solid #bcbcbc;
+  border: 2px solid #bcbcbc;
   padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
@@ -39,11 +44,11 @@
 }
 
 .entrar_btn:hover {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 
 .registro_btn {
-  border: 1px solid #17161e;
+  border: 2px solid #17161e;
   padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
@@ -51,5 +56,9 @@
 }
 
 .registro_btn:hover {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
+}
+
+.header_logo {
+  transform: translateX(-15%);
 }

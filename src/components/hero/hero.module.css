@@ -1,0 +1,80 @@
+.hero_wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.hero_container {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_text {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: inter;
+  gap: 16px;
+}
+
+.hero_title {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero_span {
+  width: 24ch;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.hero_subtitle {
+  width: 44ch;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+.hero_img {
+  display: flex;
+  justify-content: center;
+}
+
+.hero_button {
+  margin-top: 60px;
+  display: flex;
+  gap: 24px;
+}
+
+.saiba_btn a {
+  color: #fff;
+  border: 2px solid #bcbcbc79;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.saiba_btn a:hover {
+  background-color: #d80f0f;
+  border: 2px solid #d80f0f;
+}
+
+.encontrar_btn a {
+  color: #fff;
+  border: 2px solid #bcbcbc79;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.encontrar_btn a:hover {
+  background-color: #d80f0f;
+  border: 2px solid #d80f0f;
+}

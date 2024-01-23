@@ -5,11 +5,13 @@ const Header = () => {
   return (
     <header className={styles.Header}>
       <div class={styles.header_content}>
+
         <div class={styles.header_logo}>
           <a href="#">
             <img src={logo} alt="Logo" />
           </a>
         </div>
+
         <div class={styles.header_nav}>
           <nav>
             <ul class={styles.ul_menu}>
@@ -28,6 +30,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
+
         <div class={styles.header_button}>
           <div class={styles.entrar_btn}>
             <a href="#">Entrar</a>
@@ -36,6 +39,7 @@ const Header = () => {
             <a href="#">Cadastre-se</a>
           </div>
         </div>
+        
       </div>
     </header>
   );
