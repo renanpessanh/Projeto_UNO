@@ -1,0 +1,49 @@
+.modelos_wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.modelos_container {
+  margin-top: 60px;
+  display: flex;
+}
+
+.modelos_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modelos_text {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  font-family: inter;
+  justify-content: space-between;
+}
+
+.modelos_title {
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.modelos_more {
+  margin-right: 70px ;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  width: 44ch;
+  font-size: 24px;
+  font-weight: 500;
+}
+.modelos_img {
+  display: flex;
+  justify-content: center;
+}
+
+.modelos_button {
+  margin-top: 60px;
+  display: flex;
+  gap: 24px;
+}

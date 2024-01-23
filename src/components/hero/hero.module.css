@@ -61,8 +61,8 @@
   cursor: pointer;
 }
 .saiba_btn a:hover {
-  background-color: #d80f0f;
-  border: 2px solid #d80f0f;
+  background-color: #d42828;
+  border: 2px solid #d42828;
 }
 
 .encontrar_btn a {
@@ -75,6 +75,6 @@
   cursor: pointer;
 }
 .encontrar_btn a:hover {
-  background-color: #d80f0f;
-  border: 2px solid #d80f0f;
+  background-color: #d42828;
+  border: 2px solid #d42828;
 }
