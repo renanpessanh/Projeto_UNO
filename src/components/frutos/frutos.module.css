@@ -1,0 +1,44 @@
+.frutos_wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  margin-bottom: 80px;
+}
+
+.frutos_container {
+  margin-top: 60px;
+  display: flex;
+}
+
+.frutos_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.frutos_text {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  color: #fff;
+  font-family: inter;
+}
+
+.frutos_title {
+  display: flex;
+  justify-content: start;
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.frutos_subtitle {
+  color: #fff;
+  display: flex;
+  gap: 10px;
+}
+
+.frutos_img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}

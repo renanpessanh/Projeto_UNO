@@ -1,45 +1,62 @@
+import { useState } from "react";
 import styles from "./header.module.css";
-import logo from "../../assets/img/Uno-Logo-menu.png";
+import LogoMenu from "../../assets/img/Uno-Logo-menu.png";
+import IconsBars from "../../assets/img/menu-togle.svg";
+import IconCloser from "../../assets/img/menu-closer.svg";
 
 const Header = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const links = [
+    { name: "Início", link: "/" },
+    { name: "Onde encontrar", link: "/" },
+    { name: "Novos produtos", link: "/" },
+    { name: "Créditos", link: "/" },
+  ];
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
-    <header className={styles.Header}>
-      <div class={styles.header_content}>
-
-        <div class={styles.header_logo}>
-          <a href="#">
-            <img src={logo} alt="Logo" />
-          </a>
+    <header
+      id={styles.Header}
+      className={`${styles.header} ${menuActive ? styles.active : ""}`}
+    >
+      <div className={styles.header_wrapper}>
+        <div>
+          <button className={styles.LogoButton}>
+            <img src={LogoMenu} alt="UNO" />
+          </button>
         </div>
-
-        <div class={styles.header_nav}>
-          <nav>
-            <ul class={styles.ul_menu}>
-              <li>
-                <a href="#">Início</a>
+        <button id={styles.buttonMobile} onClick={toggleMenu}>
+          <img
+            id={styles.MenuIcons}
+            src={menuActive ? IconCloser : IconsBars}
+            alt="Icone Menu"
+          />
+        </button>
+        <nav className={menuActive ? styles.active : ""}>
+          <ul id={styles.ulmenu} className={styles.ul_wrapper}>
+            {links.map((link, index) => (
+              <li className={styles.nav_li} key={link.name}>
+                <a href={link.link} key={index}>
+                  {link.name}
+                </a>
               </li>
-              <li>
-                <a href="#">Onde encontrar</a>
-              </li>
-              <li>
-                <a href="#">Novos produtos</a>
-              </li>
-              <li>
-                <a href="#">Créditos</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class={styles.header_button}>
-          <div class={styles.entrar_btn}>
-            <a href="#">Entrar</a>
-          </div>
-          <div class={styles.registro_btn}>
-            <a href="#">Cadastre-se</a>
-          </div>
-        </div>
-        
+            ))}
+            <li className={styles.nav_li}>
+              <a href="#" className={styles.btn_login}>
+                Entrar
+              </a>
+            </li>
+            <li className={styles.nav_li}>
+              <a href="#" className={styles.btn_singIn}>
+                Cadastre-se
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );

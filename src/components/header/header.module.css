@@ -1,65 +1,106 @@
-.Header {
-  margin: 0 auto;
+.header_wrapper {
   max-width: 1280px;
-
-}
-
-.header_content {
+  padding: 8px 16px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #bcbcbc;
 }
 
-.ul_menu {
+.header {
+  position: relative;
+}
+
+.ul_wrapper {
   display: flex;
   gap: 32px;
 }
-.ul_menu li a {
-  color: #bcbcbc;
-}
-.ul_menu li a:hover {
-  color: #d80f0f;
-  text-decoration: underline;
+
+.nav_li a {
+  color: #dfdfdf;
 }
 
-.header_button {
-  margin-right: 60px;
+
+.nav_li .navLink:hover{
+  color: #ed1c24;
+}
+
+.LogoButton {
+  background-color: transparent;
+  border: transparent;
+}
+
+.btn_wrapper {
   display: flex;
-  gap: 12px;
-}
-.header_button a {
-  color: #bcbcbc;
+  gap: 16px;
+  align-items: center;
 }
 
-.entrar_btn {
-  color: #bcbcbc;
+.btn_login {
   border: 2px solid #bcbcbc;
   padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
 }
-
-.entrar_btn:hover {
+.btn_login:hover {
   border: 2px solid #fff;
 }
 
-.registro_btn {
+
+.btn_singIn {
   border: 2px solid #17161e;
   padding: 10px 30px;
   border-radius: 10px;
   font-weight: 500;
   cursor: pointer;
 }
-
-.registro_btn:hover {
+.btn_singIn:hover {
   border: 2px solid #fff;
 }
 
-.header_logo {
-  transform: translateX(-15%);
+#buttonMobile {
+  display: none;
 }
+
+@media (max-width: 600px) {
+  /* menu mobile */
+  nav {
+    display: none;
+  }
+  #buttonMobile {
+    display: block;
+    background-color: transparent;
+    border: transparent;
+  }
+  #MenuIcons {
+    width: 20px;
+    height: 20px;
+  }
+  /* estilo para o menu ativo */
+  .active nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px; /* ajuste conforme necessário */
+    left: 0;
+    width: 100%;
+    background-color: #17161e; /* cor de fundo do menu mobile */
+    z-index: 1;
+  }
+
+  .active .ul_wrapper {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .active .nav_li {
+    text-align: center;
+  }
+}
+
+/* adicione mais estilos conforme necessário para o menu mobile */
+
